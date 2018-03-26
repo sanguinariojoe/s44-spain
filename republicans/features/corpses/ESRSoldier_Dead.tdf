@@ -5,7 +5,7 @@
   footprintX=1;
   footprintZ=1;
   metal=-1;
-  object=ESRTrooper_dead.S3O;
+  object=ESRTrooper_dead.dae;
   reclaimable=0;
   smoketime=0;
 	[customParams]

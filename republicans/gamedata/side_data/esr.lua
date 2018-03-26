@@ -1,6 +1,6 @@
 local esrdata = {
     name = "ESR",
-    startUnit = "ESREngineer",
+    startUnit = "ESRRifle",
     alliance = "axis",
     wiki_title = "Spanish Republic",
     wiki_desc = [[## Introduction
@@ -19,4 +19,4 @@ to test the new war machinery and tactics.
 .]],
 } 
 
-return pldata
+return esrdata
