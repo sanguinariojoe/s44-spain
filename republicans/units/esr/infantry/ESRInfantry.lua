@@ -5,6 +5,11 @@ local ESRInf = {
     },
 }
 
+local ESR_HQEngineer = EngineerInf:New(ESRInf):New{
+    name                = "Field",
+    objectName          = "ESR/esrhqengineer.dae",
+}
+
 local ESR_Rifle = RifleInf:New(ESRInf):New{
     name                = "Mauser M1893 Rifle",
     objectName          = "ESR/esrrifle.dae",
@@ -33,6 +38,8 @@ local ESR_Naranjero = SMGInf:New(ESRInf):New{
 
 return lowerkeys({
     -- Regular Inf
+    ["ESRHQEngineer"] = ESR_HQEngineer,
+	["ESRHQAIEngineer"] = ESR_HQEngineer:Clone("ESRHQEngineer"),
     ["ESRRifle"] = ESR_Rifle,
     ["ESRNaranjero"] = ESR_Naranjero,
 })
