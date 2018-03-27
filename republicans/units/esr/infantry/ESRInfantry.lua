@@ -46,6 +46,26 @@ local ESR_Hotchkiss = LMGInf:New(ESRInf):New{
     },
 }
 
+local ESR_Maxim = HMGInf:New(ESRInf):New{
+    name                = "Maxim M10 Heavy Machinegun",
+    objectName          = "ESR/esrmaxim.dae",
+    buildpic            = "ESRHMG.png",
+    customparams = {
+        scriptanimation        = "wheeled",
+    },
+}
+
+local ESR_Maxim_Sandbag = SandbagMG:New{
+    name                = "Deployed Maxim M10 Heavy Machinegun",
+    objectName          = "ESR/esrsandbagmg.dae",
+    buildpic            = "ESRSandbagMG.png",
+    weapons = {
+        [1] = { -- HMG
+            name                = "Maxim",
+        },
+    },
+}
+
 return lowerkeys({
     -- Regular Inf
     ["ESRHQEngineer"] = ESR_HQEngineer,
@@ -53,4 +73,6 @@ return lowerkeys({
     ["ESRRifle"] = ESR_Rifle,
     ["ESRNaranjero"] = ESR_Naranjero,
     ["ESRHotchkiss"] = ESR_Hotchkiss,
+	["ESRMaxim_Sandbag"] = ESR_Maxim_Sandbag,
+	["ESRMaxim"] = ESR_Maxim,
 })

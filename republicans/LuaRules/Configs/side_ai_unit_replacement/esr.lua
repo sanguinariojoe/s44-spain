@@ -1,5 +1,6 @@
 local unitDefs = {
-	esrhqengineer = "esrhqaiengineer",
+    esrhqengineer = "esrhqaiengineer",
+    esrmaxim = "esrmaxim_sandbag",
 }
 
 return unitDefs
