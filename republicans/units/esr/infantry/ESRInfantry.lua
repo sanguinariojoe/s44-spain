@@ -18,7 +18,21 @@ local ESR_Rifle = RifleInf:New(ESRInf):New{
     },
 }
 
+local ESR_Naranjero = SMGInf:New(ESRInf):New{
+    name                = "Naranjero Submachinegun",
+    objectName          = "ESR/esrnaranjero.dae",
+    weapons = {
+        [1] = { -- SMG
+            name                = "Naranjero",
+        },
+        [2] = { -- Grenade
+            name                = "Tonelete",
+        },
+    },
+}
+
 return lowerkeys({
     -- Regular Inf
     ["ESRRifle"] = ESR_Rifle,
+    ["ESRNaranjero"] = ESR_Naranjero,
 })
