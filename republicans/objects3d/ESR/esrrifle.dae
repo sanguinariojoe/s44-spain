@@ -5,8 +5,8 @@
       <author>Blender User</author>
       <authoring_tool>Blender 2.79.0 commit date:2017-09-12, commit time:08:47, hash:8ef39d5c882</authoring_tool>
     </contributor>
-    <created>2018-03-27T18:32:34</created>
-    <modified>2018-03-27T18:32:34</modified>
+    <created>2018-03-27T20:26:55</created>
+    <modified>2018-03-27T20:26:55</modified>
     <unit name="meter" meter="1"/>
     <up_axis>Z_UP</up_axis>
   </asset>
@@ -732,6 +732,7 @@
       </mesh>
     </geometry>
   </library_geometries>
+  <library_controllers/>
   <library_visual_scenes>
     <visual_scene id="Scene" name="Scene">
       <node id="ground" name="ground" type="NODE">
@@ -882,7 +883,7 @@
                     </bind_material>
                   </instance_geometry>
                   <node id="flare" name="flare" type="NODE">
-                    <matrix sid="transform">-1 8.74228e-8 -2.22045e-16 -2.38419e-7 4.04342e-15 4.37114e-8 -1 -7 -8.74228e-8 -1 -4.64446e-8 0.3548043 0 0 0 1</matrix>
+                    <matrix sid="transform">1 -1.41308e-15 1.09906e-15 -2.38419e-7 0 -0.7071068 -0.7071068 -7 0 0.7071068 -0.7071068 0.3548043 0 0 0 1</matrix>
                     <instance_geometry url="#flare-mesh" name="flare">
                       <bind_material>
                         <technique_common>

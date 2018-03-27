@@ -1,7 +1,7 @@
 local esrdata = {
     name = "ESR",
     startUnit = "ESRHQEngineer",
-    alliance = "axis",
+    alliance = "neutral",
     wiki_title = "Spanish Republic",
     wiki_desc = [[## Introduction
 
