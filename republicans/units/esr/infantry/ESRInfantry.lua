@@ -36,10 +36,21 @@ local ESR_Naranjero = SMGInf:New(ESRInf):New{
     },
 }
 
+local ESR_Hotchkiss = LMGInf:New(ESRInf):New{
+    name                = "Hotchkiss M1922 Machinegun",
+    objectName          = "ESR/esrhotchkiss.dae",
+    weapons = {
+        [1] = { -- LMG
+            name                = "HotchkissM1922",
+        },
+    },
+}
+
 return lowerkeys({
     -- Regular Inf
     ["ESRHQEngineer"] = ESR_HQEngineer,
-	["ESRHQAIEngineer"] = ESR_HQEngineer:Clone("ESRHQEngineer"),
+    ["ESRHQAIEngineer"] = ESR_HQEngineer:Clone("ESRHQEngineer"),
     ["ESRRifle"] = ESR_Rifle,
     ["ESRNaranjero"] = ESR_Naranjero,
+    ["ESRHotchkiss"] = ESR_Hotchkiss,
 })
