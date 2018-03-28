@@ -66,6 +66,32 @@ local ESR_Maxim_Sandbag = SandbagMG:New{
     },
 }
 
+local ESR_Mortar50mm = MedMortarInf:New(ESRInf):New{
+    name                = [[Valero 50mm Mortar M1932]],
+    objectName          = "ESR/esrmortar50mm.dae",
+    weapons = {
+        [1] = { -- HE
+            name                = "ValeroM1932Mortar",
+        },
+        [2] = { -- Smoke
+            name                = "ValeroM1932MortarSmoke",
+        },
+    },
+}
+
+local ESR_Mortar = MedMortarInf:New(ESRInf):New{
+    name                = [[Valero 81mm Mortar M1933]],
+    objectName          = "ESR/esrmortar.dae",
+    weapons = {
+        [1] = { -- HE
+            name                = "ValeroM1933Mortar",
+        },
+        [2] = { -- Smoke
+            name                = "ValeroM1933MortarSmoke",
+        },
+    },
+}
+
 local ESR_Observ = ObservInf:New(ESRInf):New{
     objectName          = "ESR/esrobserv.dae",
     weapons = {
@@ -84,5 +110,7 @@ return lowerkeys({
     ["ESRHotchkiss"] = ESR_Hotchkiss,
     ["ESRMaxim_Sandbag"] = ESR_Maxim_Sandbag,
     ["ESRMaxim"] = ESR_Maxim,
+    ["ESRMortar50mm"] = ESR_Mortar50mm,
+    ["ESRMortar"] = ESR_Mortar,
     ["ESRObserv"] = ESR_Observ,
 })
