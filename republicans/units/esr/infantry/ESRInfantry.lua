@@ -66,6 +66,15 @@ local ESR_Maxim_Sandbag = SandbagMG:New{
     },
 }
 
+local ESR_Observ = ObservInf:New(ESRInf):New{
+    objectName          = "ESR/esrobserv.dae",
+    weapons = {
+        [2] = { -- Pistol
+            name                = "Astra400",
+        },
+    },
+}
+
 return lowerkeys({
     -- Regular Inf
     ["ESRHQEngineer"] = ESR_HQEngineer,
@@ -73,6 +82,7 @@ return lowerkeys({
     ["ESRRifle"] = ESR_Rifle,
     ["ESRNaranjero"] = ESR_Naranjero,
     ["ESRHotchkiss"] = ESR_Hotchkiss,
-	["ESRMaxim_Sandbag"] = ESR_Maxim_Sandbag,
-	["ESRMaxim"] = ESR_Maxim,
+    ["ESRMaxim_Sandbag"] = ESR_Maxim_Sandbag,
+    ["ESRMaxim"] = ESR_Maxim,
+    ["ESRObserv"] = ESR_Observ,
 })
