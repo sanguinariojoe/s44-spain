@@ -1,4 +1,4 @@
-local ESRRenaultFT17 = MediumTank:New{
+local ESRRenaultFT17 = LightTank:New{
     name                = "Renault FT-17",
     objectName          = "ESR/esrrft17.dae",
     buildCostMetal      = 2150,
@@ -25,7 +25,8 @@ local ESRRenaultFT17 = MediumTank:New{
         armor_top            = 10,
         maxammo              = 12,
         maxvelocitykmh       = 10,
-        -- normaltex            = "unittextures/ESRRFT17_normals.dds",
+        barrelrecoildist     = 2,
+        normaltex            = "unittextures/ESRRFT17_normals.png",
     },
 }
 
