@@ -1,22 +1,22 @@
 local esrDefs = {
     -- Trucks / Trucksupplies
---     esrtiznaotruck =
---     {
---         into = 'esrtrucksupplies',
---         tech = 0,
---         time = 20,
---         metal = 0,
---         energy = 0,
---     },
--- 
---     esrtrucksupplies =
---     {
---         into = 'esrtiznaotruck',
---         tech = 0,
---         time = 20,
---         metal = 0,
---         energy = 0,
---     },
+    esrtiznao =
+    {
+        into = 'esrtrucksupplies',
+        tech = 0,
+        time = 20,
+        metal = 0,
+        energy = 0,
+    },
+
+    esrtrucksupplies =
+    {
+        into = 'esrtiznao',
+        tech = 0,
+        time = 20,
+        metal = 0,
+        energy = 0,
+    },
     -- Machineguns
     esrmaxim =
     {
