@@ -1,0 +1,15 @@
+[esrarellano40mm_destroyed] {
+  description=Destroyed Gun;
+  damage=1251;
+  energy=500;
+  featureDead=Debris_Small;
+  footprintX=2;
+  footprintZ=2;
+  object=ESRArellano40mm_Destroyed.dae;
+  reclaimable=1;
+  [customParams]
+  {
+
+  }
+}
+
