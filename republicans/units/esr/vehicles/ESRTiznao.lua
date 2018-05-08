@@ -23,13 +23,12 @@ local ESR_Tiznao = TransportTruck:New{
 }
 
 local ESR_TruckSupplies = Supplies:New{
+    objectName              = "ESR/ESRSuppliesTruck.dae",
+    
     customParams = {
-
+        normaltex            = "unittextures/ESRTiznao_normals.png",
     },
 }
-
--- lowercase objectname!
-ESR_TruckSupplies.objectname = "FRA/FRATruckSupplies.s3o" --]]
 
 return lowerkeys({
     ["ESRTiznao"] = ESR_Tiznao,
