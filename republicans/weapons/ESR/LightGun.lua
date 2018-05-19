@@ -29,7 +29,26 @@ local M1932_20K45mmAP = LightAP:New(M1932_20K45mm, true):New{
     armor_penetration_100m  = 43, -- These seem very low!
   },
   damage = {
-    default            = 1565,
+    default            = 1265,
+  },
+}
+
+-- Pak 35/36 37mm (GER)
+local Pak36 = LightGun:New{
+  name                 = [[Pak 36/37 Gun]],
+  range                = 930,
+  reloadTime           = 3.5,
+  soundStart           = [[RUS_45mm]],
+}
+
+local Pak36AP = LightAP:New(Pak36, true):New{
+  weaponVelocity     = 1600,
+  customparams = {
+    armor_penetration_1000m = 23,
+    armor_penetration_100m  = 46,
+  },
+  damage = {
+    default            = 850,
   },
 }
 
@@ -38,4 +57,5 @@ return lowerkeys({
   -- M1932 20K 45mm
   M1932_20K45mmHE = M1932_20K45mmHE,
   M1932_20K45mmAP = M1932_20K45mmAP,
+  Pak36AP = Pak36AP,
 })

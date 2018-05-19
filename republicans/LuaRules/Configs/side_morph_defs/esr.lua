@@ -37,6 +37,25 @@ local esrDefs = {
         energy = 0,
     },
 
+    esr37mmcc_truck =
+    {
+        into = 'esr37mmcc_stationary',
+        tech = 0,
+        time = 5,
+        metal = 0,
+        energy = 0,
+        directional = true,
+    },
+
+    esr37mmcc_stationary =
+    {
+        into = 'esr37mmcc_truck',
+        tech = 0,
+        time = 5,
+        metal = 0,
+        energy = 0,
+    },
+
     -- Machineguns
     esrmaxim =
     {

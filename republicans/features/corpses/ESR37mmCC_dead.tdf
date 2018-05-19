@@ -1,0 +1,15 @@
+[ESR37mmCC_destroyed] {
+  description=Destroyed Gun;
+  damage=1251;
+  energy=500;
+  featureDead=Debris_Small;
+  footprintX=2;
+  footprintZ=2;
+  object=ESR37mmCC_dead.dae;
+  reclaimable=1;
+  [customParams]
+    {
+
+    }
+}
+
